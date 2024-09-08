@@ -3,7 +3,7 @@ import AnimatedText from './Animate';
 import React, { useEffect } from 'react';
 import ScrollText from './ScrollText';
 import './ScrollText.css';
-import ImageGallery from './ImageGallery';
+
 
 function Home(){
     return(
