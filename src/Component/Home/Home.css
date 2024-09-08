@@ -1,19 +1,30 @@
 .Home {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
   }
   .Home .title{
     background-color: black;
     height: 400px;
     color: white;
+    text-align: right;
+    padding-top: ;
+    transition: 1s ease;
   }
+  .Home .title:hover{
+    transition: 1s ease;
+    transform: translateX(-200px);   
+}
+
+
+
   .Home .header {
-    margin: 0 0 0 0;
-    padding: 50px 20vh;
+    padding: 50px 20vh 100px 20vh;
     background-color: white;
     text-align: left;
     font-family: 'Roboto', sans-serif;
   }
   .Home .header h2{
-    font-size: 6svh;
+    font-size: 4vw;
     line-height: 0.5; /* 줄 간격 조정 */
     font-family: 'Roboto', sans-serif;
   }
@@ -22,11 +33,37 @@
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 50px 20vh;
-  height: 600px;
 }
-.Home span{
-  
+
+
+.scroll-arrow {
+    position: fixed;
+    right: 47%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.scroll-arrow:hover {
+    transform: scale(1.1); 
+    color: rgb(161, 123, 123); 
+}
+
+.res1{
+  transition: 1s ease 0.2s;
+  padding: 100px 0px 0 0;
+}
+.res1 img{
+  width: 50vw;
+  transition: 1s ease 0.2s;
+}
+.res1:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 
 
 .img_1{
@@ -42,35 +79,24 @@
 }
  .img_1 img:hover{
     transform: scale(1.05);
-    -webkit-filter:  blur(3px);
+    -webkit-filter:  blur(1px);
      filter:  blur(3px);
 }
 
 
-
-  /* /////////////////////////// */
-  h1.sixth { position: relative; }
-
-h1.sixth:before,
-h1.sixth:after {
-  content: '[';
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  height: 100%;
-  font-size: 1.25em;
-  color: tomato;
-  
-  transition: all 0.5s ease;
+.about_part{
+  display: inline-flex;
+  gap: 10vw;
+  color: white;
 }
-
-h1.sixth:after { content: ']'; }
-
-h1.sixth:hover:before { 
-  transform: translateX(-5px);
+.about_part .partbox{
+  width: 400px;
+  height: 350px;
+  transition: 1s ease;
 }
-
-h1.sixth:hover:after { 
-  transform: translateX(5px);
+.about_part .partbox:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 1s ease;
+  color: antiquewhite;
 }
-

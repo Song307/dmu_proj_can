@@ -29,7 +29,7 @@ function Navigator(){
     return(
         <div className='Nav'>
             <div className='list'>
-                <li className='logo_CAN'>CAN</li>
+                <li className='logo_CAN'><a href='/'>CAN</a></li>
                 <li className='li'>About</li>
                 <li className='li'>Project</li>
                 <li className='li'>Study</li>
