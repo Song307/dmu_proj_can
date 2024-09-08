@@ -30,6 +30,7 @@ function Navigator(){
         <div className='Nav'>
             <div className='list'>
                 <li className='logo_CAN'>CAN</li>
+                <li className='li'>About</li>
                 <li className='li'>Project</li>
                 <li className='li'>Study</li>
                 <li className='li'>Recruit</li>

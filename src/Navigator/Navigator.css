@@ -1,6 +1,6 @@
 .Nav {
     color: rgb(255, 255, 255);
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: rgb(0, 0, 0);
     padding: 15px 5vh;
     display: flex;
@@ -15,7 +15,7 @@
     list-style: none;
     align-items: center;
     gap: 50px;
-    transition: 0.1s;
+    transition: 0.1s;   
 }
 
 
@@ -32,10 +32,10 @@
 }
 
 .Nav .logo_CAN {
-    font-size: 25px;
+    font-size: 40px;
     border: 1px solid white;
-    padding: 5px 15px;
-    margin-right: 50vw; /* 여전히 큰 마진을 유지 */
+    padding: 5px 20px;
+    margin-right: 40vw; 
     border-radius: 25px;
     transition: transform 0.3s ease;
     background-color: black;

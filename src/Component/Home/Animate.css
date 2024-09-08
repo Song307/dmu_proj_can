@@ -9,14 +9,14 @@
 .text {
     display: flex;
     font-size: 400px;
-    color: #ffffff;
     font-weight: bold;
-    
-}
-/* .text:hover{
     transition: 1s;
-    transform: scale(1.1);
-} */
+}
+ .text:hover{
+    transition: 1s;
+    transform: translateX(-200px);   
+}
+
 
 .letter {
     display: inline-block;
