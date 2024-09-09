@@ -1,7 +1,7 @@
 import './Home.css';
 import AnimatedText from './Animate';
 import React, { useEffect, useState} from 'react';
-import Navigator_home from '../Navigator_home/Navigator_home';
+import Navigator_home from './Navigator_home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import resImage from './resource1.PNG';

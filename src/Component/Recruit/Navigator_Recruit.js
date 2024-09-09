@@ -1,4 +1,4 @@
-import '../Navigator_home/Navigator_home.css'
+import '../Home/Navigator_home.css'
 
 
 function Navigator_Recruit(){
