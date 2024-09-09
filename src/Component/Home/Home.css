@@ -100,3 +100,18 @@
   transition: 1s ease;
   color: antiquewhite;
 }
+
+
+
+@media (max-width: 1024px) {
+  
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+  .Home .title:hover{
+    transition: 1s ease;
+    transform: scale(1.05);   
+}
+}
