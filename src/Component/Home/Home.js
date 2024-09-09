@@ -1,7 +1,7 @@
 import './Home.css';
 import AnimatedText from './Animate';
 import React, { useEffect, useState} from 'react';
-import Navigator from './Navigator_home/Navigator';
+import Navigator_home from './Navigator_home/Navigator_home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import resImage from './resource1.PNG';
@@ -26,7 +26,7 @@ function Home(){
 
     return(
         <div className='Home'>
-          <Navigator/>
+          <Navigator_home/>
             <div className='title'>
             <AnimatedText text="CAN" />
             

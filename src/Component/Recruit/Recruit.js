@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './Recruit.css'
-import Navigator_Recruit from './Navigator_Recruit/Navigator';
+import Navigator_Recruit from './Navigator_Recruit';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 

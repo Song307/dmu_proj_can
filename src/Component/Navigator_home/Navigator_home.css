@@ -1,7 +1,7 @@
 .Nav {
     color: rgb(255, 255, 255);
     font-size: 25px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(24, 26, 27);
     padding: 5px 20px;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 
 .Nav .list {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(24, 26, 27);
     width: 100%;
     display: flex;
     list-style: none;
@@ -44,15 +44,15 @@
     margin-right: 40vw; 
     border-radius: 25px;
     transition: transform 0.3s ease;
-    background-color: black;
+    background-color: rgb(24, 26, 27);
     color: white;
     font-weight: 600;
     cursor: pointer;
 }
 .Nav .logo_CAN:hover {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     transform: scale(1.05);
 }
 .Nav .logo_CAN a {

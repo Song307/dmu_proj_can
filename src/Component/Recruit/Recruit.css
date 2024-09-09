@@ -1,5 +1,5 @@
 .Recruit{
-    background-color: black;
+    background-color: rgb(24, 26, 27);
     color: white;
     padding: 100px 0;
 }
@@ -20,9 +20,8 @@
     height: 30px;
     border: none;
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-bottom: 1px rgb(255, 255, 255) solid;
-    
 }
 .form_input_list{
     margin: 0 10px;

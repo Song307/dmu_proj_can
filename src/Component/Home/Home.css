@@ -5,7 +5,7 @@
   .Home .title{
     background-color:rgb(24, 26, 27);
     height: 400px;
-    color: rgb(220, 218, 215);
+    color: white;
     text-align: right;
     padding-top: ;
     transition: 1s ease;
@@ -19,7 +19,7 @@
 
   .Home .header {
     padding: 50px 20vh 100px 20vh;
-    background-color: rgb(220, 218, 215);
+    background-color: white;
     text-align: left;
     font-family: 'Roboto', sans-serif;
   }

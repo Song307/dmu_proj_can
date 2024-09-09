@@ -1,4 +1,4 @@
-import './Navigator.css';
+import './Navigator_home.css';
 
 function SvgConnecter(svgName){
     if(svgName=='user'){
@@ -24,7 +24,7 @@ function SvgConnecter(svgName){
 }
 
 
-function Navigator(){
+function Navigator_home(){
 
     return(
         <div className='Nav'>
@@ -47,6 +47,6 @@ function Navigator(){
     );
 }
 
-export default Navigator;
+export default Navigator_home;
 
 

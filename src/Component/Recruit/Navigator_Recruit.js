@@ -1,4 +1,4 @@
-import './Navigator.css';
+import '../Navigator_home/Navigator_home.css'
 
 
 function Navigator_Recruit(){
@@ -7,6 +7,7 @@ function Navigator_Recruit(){
         <div className='Nav'>
             <div className='list'>
                 <li className='logo_CAN'><a href='/'>CAN</a></li>
+                
             </div>
 
         </div>
