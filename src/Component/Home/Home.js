@@ -19,7 +19,7 @@ function Home(){
   
   const scrollToPosition = () => {
     window.scrollTo({
-        top: 1000, // 고정된 스크롤 위치
+        top: 1100, // 고정된 스크롤 위치
         behavior: 'smooth' // 부드러운 스크롤 애니메이션
     });
 };                     
