@@ -1,0 +1,7 @@
+[build]
+  publish = "build"  # 빌드된 파일을 배포하는 폴더 (React는 보통 'build' 폴더)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
