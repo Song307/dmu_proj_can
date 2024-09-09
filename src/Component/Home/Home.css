@@ -1,6 +1,6 @@
 .Home {
   background-color: rgb(24, 26, 27);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif
   }
   .Home .title{
     background-color:rgb(24, 26, 27);
@@ -21,12 +21,10 @@
     padding: 50px 20vh 100px 20vh;
     background-color: white;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
   }
   .Home .header h2{
     font-size: 4vw;
     line-height: 0.5; /* 줄 간격 조정 */
-    font-family: 'Roboto', sans-serif;
   }
 
 .Home .overview{
@@ -87,6 +85,9 @@
   margin-right: 0;
 }
 
+.vision{
+  font-family: 'Noto Sans KR', sans-serif
+}
  .section img{
     width: 30vh;
     height: 30vh;
@@ -104,6 +105,7 @@
 
 .sub_title_h1 {
   font-size: 3vw;
+  
 }
 .sub_title_h2{
   font-size: 2vw;
