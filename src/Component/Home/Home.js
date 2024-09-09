@@ -72,8 +72,8 @@ function Home(){
 
 
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    <div className='vision' data-aos="zoom-in" data-aos-once='false'> 
-                      <h1 className='sub_title_h1'>우리 동아리의 핵심은?</h1>
+                    <div className='vision'> 
+                      <h1 className='sub_title_h1' >우리 동아리의 핵심은?</h1>
                         <div className='section'>
                           <div className='blocks' data-aos="fade-right" data-aos-once='false'>
                             <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_01.png'/>

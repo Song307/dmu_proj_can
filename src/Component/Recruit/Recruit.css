@@ -26,6 +26,10 @@
 .form_input_list{
     margin: 0 10px;
 }
+.form_list p{
+    margin-top: -0px;
+    color: rgb(153, 153, 153);
+}
 
 .Submit{
     margin-top: 20px;
@@ -38,4 +42,10 @@
     width: 150px;
     font-size: 20px;
     border: none;
+    transition: 1s;
+}
+.Submit_buton:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }

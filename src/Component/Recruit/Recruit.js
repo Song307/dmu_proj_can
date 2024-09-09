@@ -41,12 +41,14 @@ function Recruit(){
                     </div>
                 </div>
                 <div className='form_list'> 지원동기 <br/>
-                <p>CAN 에 지원하게 된 동기와 함께 하고 싶은 활동이 있다면
-                자유롭게 적어주세요</p>
-                    <input type="text" placeholder="학번" className='form_text'/>
+                <p>* CAN 에 지원하게 된 동기와 함께 하고 싶은 활동이 있다면 자유롭게 적어주세요</p>
+                    <input type="text" placeholder="지원동기" className='form_text'/>
                 </div>
                 <div className='form_list'> 관심분야 <br/>
-                    <input type="text" placeholder="학번" className='form_text'/>
+                    <input type="text" placeholder="관심분야" className='form_text'/>
+                </div>
+                <div className='form_list'> 본인이 했던 프로젝트, 공부한 내용이 있다면 깃허브링크를 첨부해주세요. 없다면 비워두셔도 좋습니다. <br/>
+                    <input type="text" placeholder="git.hub" className='form_text'/>
                 </div>
                 
                 <div className='Submit'>

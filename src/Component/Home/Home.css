@@ -89,6 +89,7 @@
 
  .section img{
     width: 30vh;
+    height: 30vh;
     padding: 0 20px;
     -webkit-filter:  blur(0);
     filter:  blur(0);
@@ -105,7 +106,7 @@
   font-size: 3vw;
 }
 .sub_title_h2{
-  font-size: 40px;
+  font-size: 2vw;
 }
 
 
