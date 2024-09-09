@@ -31,8 +31,8 @@
     .text {font-size:400px; color: rgb(255, 255, 255);}
 }
 @media (max-width: 768px) {
-    .text {font-size:200px; color: rgb(255, 0, 0);}
+    .text {font-size:200px; color: rgb(255, 255, 255);}
 }
 @media (max-width: 480px) {
-    .text {font-size:100px; color: rgb(55, 0, 255);}
+    .text {font-size:100px; color: rgb(255, 255, 255);}
 }

@@ -1,5 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Component/Home/Home';
+import Recruit from './Component/Recruit/Recruit';
+
 
 function Routing(){
     return(
@@ -7,7 +9,8 @@ function Routing(){
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/Recruit' />
+                    <Route path='/recruit' element={<Recruit/>}/>
+                    <Route path='login' />
                 </Routes>
             </BrowserRouter>
         </div>

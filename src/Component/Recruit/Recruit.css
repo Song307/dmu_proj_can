@@ -1,0 +1,20 @@
+.Recruit{
+    background-color: black;
+    color: white;
+    padding: 100px 0;
+}
+
+.form{
+    background-color: rgb(62, 39, 9);
+    margin: 0 400px;
+    padding:20px;
+    text-align: left;
+    font-size: 15px;
+}
+.form_text{
+    width: 90%;
+    height: 30px;
+    border: none;
+    background-color: rgb(219, 198, 198);
+    color: rgb(0, 0, 0);
+}
