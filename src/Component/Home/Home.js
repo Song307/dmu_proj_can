@@ -58,7 +58,7 @@ function Home(){
              <div className='overview'>
                 <div className='res1'><img src={resImage}/></div>
                   <div className='overview_list' data-aos="fade-up" data-aos-once='false'>
-                    <h1>STUDY</h1>
+                    <h1 className='sub_title_h1'>STUDY</h1>
                     <div className='overview_list' data-aos="fade-up" data-aos-once='false'>
                      <p>
                         <br/>오랜시간 이어져 온 만큼, 다양한 프로젝트 경험 및 수상경력이 있으며 이러한 노하우를 바탕으로 하여 웹과 게임 소프트웨어 개발을 주요 분야로 활동하고 있습니다.
@@ -71,15 +71,55 @@ function Home(){
 
 
 
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <div className='vision' data-aos="zoom-in" data-aos-once='false'> 
+                      <h1 className='sub_title_h1'>우리 동아리의 핵심은?</h1>
+                        <div className='section'>
+                          <div className='blocks' data-aos="fade-right" data-aos-once='false'>
+                            <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_01.png'/>
+                            <div>
+                              <h1 className='sub_title_h2'>협력을 통한 성장 </h1>
+                              <p>팀워크를 통해 서로의 아이디어와 기술을 결합하며, 더 나은 결과를 만들어갑니다. <br/>
+                                협력적인 환경에서 문제를 해결하고, 함께 프로젝트를 완성해 나갑니다.<br/>
+                                실제 개발 환경과 유사한 팀 프로젝트를 통해 실무 경험을 쌓고, 협업 능력을 키울 수 있습니다.
+                              </p>
+                            </div>
+                         </div>
 
-                    <div data-aos="zoom-in" data-aos-once='false'> 
-                        <div className='img_1'>
-                         <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_01.png'/>
-                         <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_03.png'/>
+                         <div className='blocks_left' data-aos="fade-left" data-aos-once='false'>
+                            <div>
+                              <h1 className='sub_title_h2'>개발 커뮤니티 </h1>
+                              <p>우리 동아리는 단순한 기술 학습을 넘어,<br/>
+                                개발자들이 서로의 성장과 성공을 지원하는 따뜻한 커뮤니티입니다.<br/>
+                                같은 목표를 가진 사람들과 네트워킹하며, 서로의 성장을 응원하고 지원합니다.
+                                
+                              </p>
+                            </div>
+                            <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_03.png'/>
+                         </div>
+                         <div className='blocks' data-aos="fade-right" data-aos-once='false'>
                          <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_04.png'/>
+                            <div>
+                              <h1 className='sub_title_h2'>튜터링을 통한 성장 가이드 제공</h1>
+                              <p>동아리 내에서는 경험이 풍부한 회원들이 직접 후배나 동료들에게 기술적인 도움을 주는 튜터링 활동을 진행합니다. <br/>
+                                튜터링은 개인의 기술적인 문제를 해결하거나 프로젝트를 진행하는 데 필요한 가이드를 제공하는 중요한 과정으로,<br/>
+                                서로의 지식을 나누고 실력을 향상시킬 수 있는 기회를 제공합니다. <br/>
+                              </p>
+                            </div>
+                         </div>                         
                     </div>
 
+                    
+
+
+
+
+
+
+
+
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h1>웹과 게임의 미래를 함께 디자인하다!</h1> <br/><br/>
                     <div className='about_part' data-aos="fade-up" data-aos-once='false'>
                      <div className='partbox'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="currentColor" class="bi bi-unity" viewBox="0 0 16 16">
