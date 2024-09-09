@@ -5,16 +5,38 @@
 }
 
 .form{
-    background-color: rgb(62, 39, 9);
+    background-color: rgb(53, 53, 53);
     margin: 0 400px;
-    padding:20px;
+    padding: 50px;
     text-align: left;
     font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.form_list{
+    padding: 10px 0;
 }
 .form_text{
-    width: 90%;
+    width: 100%;
     height: 30px;
     border: none;
-    background-color: rgb(219, 198, 198);
+    background-color: transparent;
     color: rgb(0, 0, 0);
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    
+}
+.form_input_list{
+    margin: 0 10px;
+}
+
+.Submit{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Submit_buton{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    border: none;
 }
