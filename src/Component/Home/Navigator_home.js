@@ -22,6 +22,7 @@ function SvgConnecter(svgName){
     }
     
 }
+//메인 함수인 Navigator_home 함수를 보다 깔끔하게 유지하기 위해 'SvgConnecter'라는 svg 호출 함수를 따로 작성함 . -> if문으로 추가하여 이름과 사이즈 설정 가능 -> 호출방법 {SvgConnecter('이름')}
 
 
 function Navigator_home(){
@@ -33,7 +34,7 @@ function Navigator_home(){
                 <li className='li'>About</li>
                 <li className='li'>Project</li>
                 <li className='li'>Study</li>
-                <li className='li'><a href='/recruit'>Recruit</a></li>
+                <li className='li'><a href='/Recruit_form'>Recruit</a></li>
                 <div className='icon'>
                     <li className='icon_user'><a href='/login'>{SvgConnecter('user')}</a></li>
                     <li className='icon_user'>{SvgConnecter('discord')}</li>

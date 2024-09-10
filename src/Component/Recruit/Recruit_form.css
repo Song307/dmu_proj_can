@@ -1,0 +1,51 @@
+.Recruit_form{
+    background-color: rgb(24, 26, 27);
+    color: white;
+    padding: 100px 0;
+}
+
+.form{
+    background-color: rgb(53, 53, 53);
+    margin: 0 400px;
+    padding: 50px;
+    text-align: left;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.form_list{
+    padding: 10px 0;
+}
+.form_text{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px rgb(255, 255, 255) solid;
+}
+.form_input_list{
+    margin: 0 10px;
+}
+.form_list p{
+    margin-top: -0px;
+    color: rgb(153, 153, 153);
+}
+
+.Submit{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Submit_buton{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    transition: 1s;
+}
+.Submit_buton:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}

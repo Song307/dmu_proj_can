@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Component/Home/Home';
+import Recruit_form from './Component/Recruit/Recruit_form';
 import Recruit from './Component/Recruit/Recruit';
 
 
@@ -9,8 +10,9 @@ function Routing(){
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/recruit' element={<Recruit/>}/>
+                    <Route path='/Recruit_form' element={<Recruit_form/>}/>
                     <Route path='login' />
+                    <Route path='Recruit' element={<Recruit/>} />
                 </Routes>
             </BrowserRouter>
         </div>

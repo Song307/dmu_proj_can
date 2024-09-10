@@ -4,9 +4,14 @@
     ㄴStudy(Scroll link)
     ( Project, Study 데이터가 많을시 별도 페이지로 분리 ) 
 ㄴProject
+    ㄴWEB
+    ㄴGAME
 ㄴStudy
+    ㄴWEB
+    ㄴGAME
 ㄴRecruit
     ㄴRecruit
+    ㄴRecruit 기간이 아닙니다.
     ㄴRecruit form
         ㄴSubmit
 ㄴlogin (구글 로그인 api & 인증키 발급 api )

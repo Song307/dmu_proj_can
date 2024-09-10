@@ -1,51 +1,45 @@
-.Recruit{
+.Recruit {
     background-color: rgb(24, 26, 27);
-    color: white;
-    padding: 100px 0;
 }
 
-.form{
-    background-color: rgb(53, 53, 53);
-    margin: 0 400px;
-    padding: 50px;
+.Recruit .title{
+    padding: 100px   20vh;
     text-align: left;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-}
-.form_list{
-    padding: 10px 0;
-}
-.form_text{
-    width: 100%;
-    height: 30px;
-    border: none;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    border-bottom: 1px rgb(255, 255, 255) solid;
-}
-.form_input_list{
-    margin: 0 10px;
-}
-.form_list p{
-    margin-top: -0px;
-    color: rgb(153, 153, 153);
+    line-height: 1;
 }
 
-.Submit{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.Submit_buton{
-    background-color: rgb(62, 62, 62);
+.Recruit .title h1{
     color: white;
-    width: 150px;
-    font-size: 20px;
+    font-size: 150px;
+    margin: 0px 0px;
+    
+}
+
+.marquee {
+    font-weight: 600;
     border: none;
-    transition: 1s;
-}
-.Submit_buton:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
-}
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    span {
+      display: block;
+      padding: 0 20px;
+      animation: move-left 2s linear infinite;
+
+      &::after {
+        position: absolute;
+        content: attr(data-text);
+        top: 0;
+        left: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
