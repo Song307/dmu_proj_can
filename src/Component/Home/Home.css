@@ -14,7 +14,8 @@
   }
   .Home .title:hover{
     transition: 1s ease;
-    transform: translateX(-200px);   
+    transform: translateX(-200px);
+    
 }
 
 
@@ -32,7 +33,7 @@
 .Home .overview{
   background-color: rgb(24, 26, 27);
   color: white;
-  padding: 100px 20vh;
+  padding: 100px 10vw;
   scroll-behavior: smooth;
 }
 .Home .overview .o_title{
@@ -182,17 +183,25 @@
   color: antiquewhite;
 }
 
+.Home .overview .o_title{
+  text-align: left;
+  font-size: 120px;
+  line-height: 0.5;
+  padding: 30px 0;
+  margin: -0px 0;
 
+}
 
 @media (max-width: 1024px) {
-  .Home .title{
-    background-color: red;
-    height: 350px;
+  .Home .title{height: 350px;}
+  .Home .overview .o_title{font-size: 60px; line-height: 0.2;}
+  .o_title_p {
+    font-size: 10px;
   }
 }
 @media (max-width: 768px) {
   .Home .title{
-    background-color: rgba(8, 128, 197, 0.397);
+    
     height: 350px;
   }
   .Home .title:hover{
@@ -203,11 +212,20 @@
 @media (max-width: 480px) {
   .Home {}
   .Home .title{
-    
+    background-color: rgb(0, 0, 0);
     height: 90px;
+    transition: 1s ease;
+  }
+  .Home .title:hover{
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(48, 48, 48));
+    height: 90px;
+    transition: 1s ease;
   }
   .Home .title:hover{
     transition: 1s ease;
     transform: scale(1);  
   }
+  .Home .overview .o_title{font-size: 50px; line-height: 0.1;}
+
+
 }
