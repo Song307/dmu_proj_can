@@ -6,12 +6,16 @@
 
 .form{
     background-color: rgb(53, 53, 53);
-    margin: 0 400px;
+    margin: 0 5vw;
     padding: 50px;
     text-align: left;
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
+
+
+
+
 .form_list{
     padding: 10px 0;
 }
@@ -31,6 +35,11 @@
     color: rgb(153, 153, 153);
 }
 
+
+
+
+
+
 .Submit{
     margin-top: 20px;
     text-align: center;
@@ -49,3 +58,6 @@
     transition: 1s;
     cursor: pointer;
 }
+
+
+

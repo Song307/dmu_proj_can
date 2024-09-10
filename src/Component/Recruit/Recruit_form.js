@@ -18,8 +18,8 @@ function Recruit_form(){
         <div>
             <Navigator_Recruit/>
             <div className="Recruit_form" >
-            <h2 data-aos="fade-right" data-aos-once='false'>Recruit Form</h2>
-            <form className='form' data-aos="fade-right" data-aos-once='true'>
+            <h2 data-aos="fade-right" data-aos-once='true'>CAN Recruit Form</h2>
+            <form className='form' data-aos="fade-left" data-aos-once='true'>
                 <div className='form_list'> 이름 <br/>
                     <input type="text" placeholder="이름" className='form_text'/>
                 </div>
