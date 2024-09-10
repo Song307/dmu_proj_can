@@ -16,15 +16,7 @@
     
 }
 
-@media (max-width: 1024px) {
-    .Recruit .title h1 {font-size:100px;}
-}
-@media (max-width: 768px) {
-    .Recruit .title h1 {font-size:100px; color: rgb(255, 255, 255);}
-}
-@media (max-width: 500px) {
-    .Recruit .title h1 {font-size:80px; color: rgb(255, 255, 255);}
-}
+
 
 .Recruit .header{
     color :white;
@@ -61,4 +53,62 @@
 .Recruit .scroll:hover {
     transform: scale(1.1); 
     color: rgb(161, 123, 123); 
+}
+
+
+/* //////////////////////////submit 버튼/////////////////////////// */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+.btn-hover {
+    padding: 0px 40px 0px 40px; /* 버튼 내부 여백 */
+    font-size: 16px; /* 폰트 크기 */
+    font-weight: 600; /* 폰트 굵기 */
+    color: #fff !important; /* 글꼴 색상 */
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+ 
+    border-radius: 20px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
+}
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+/* /////////////////////////////////////////////// */
+
+
+@media (max-width: 1024px) {
+    .Recruit .title h1 {font-size:100px;}
+}
+@media (max-width: 768px) {
+    .Recruit .title h1 {font-size:10vw; color: rgb(97, 30, 30);}
+}
+@media (max-width: 500px) {
+    .Recruit .title h1 {font-size:10vw; color: rgb(255, 255, 255);}
 }

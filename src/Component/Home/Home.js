@@ -17,14 +17,19 @@ function Home(){
     });
   }, []);        
   
-  const scrollToPosition = () => {
-    window.scrollTo({
-        top: 1100, // 고정된 스크롤 위치
-        behavior: 'smooth' // 부드러운 스크롤 애니메이션
+
+const scrollToOverview = () => {
+  const overviewSection = document.getElementById('overview');
+  if (overviewSection) {
+    overviewSection.scrollIntoView({
+      behavior: 'smooth' // 부드러운 스크롤
     });
-};                     
+  }
+};///////////////////함수로 만들 것
+
 
     return(
+      
         <div className='Home'>
           <Navigator_home/>
             <div className='title'>
@@ -48,14 +53,14 @@ function Home(){
                     <br/>
                 </p>
                 
-                <div className="scroll-arrow" onClick={scrollToPosition}>
+                <div className="scroll-arrow" onClick={scrollToOverview}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
                     </svg>
                     </div>
              </div>
 
-             <div className='overview'>
+             <div className='overview' id='overview'>
               <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>C</span>REATIVE  </h1>
               <h1 className='o_title' data-aos="fade-right" data-aos-once='false'><span className='o_title_color'>A</span>PPLICATION </h1>
               <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>N</span>ETWORK</h1>
@@ -78,7 +83,7 @@ function Home(){
 
                   <div>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    <div className='vision'> 
+                    <div className='vision' id='vision'> 
                       <h1 className='sub_title_h1' data-aos="fade-left" data-aos-once='false' >우리 동아리의 핵심은?</h1>
                         <div className='section'>
                           <div className='blocks' data-aos="fade-right" data-aos-once='false'>

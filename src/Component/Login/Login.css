@@ -1,0 +1,14 @@
+.Login{
+    background-color: rgb(24, 26, 27);
+    color: white;
+    padding: 20px 0;
+}
+
+.Login .box{
+    background-color: rgb(94, 96, 97);
+    margin: 0 40vw;
+    text-align: right;
+
+}
+
+

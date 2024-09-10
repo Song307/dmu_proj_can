@@ -1,12 +1,14 @@
 .Home {
   background-color: rgb(24, 26, 27);
-  font-family: 'Noto Sans KR', sans-serif
+  font-family: 'Noto Sans KR', sans-serif;
+  scroll-behavior: smooth;
   }
   .Home .title{
     background-color:rgb(24, 26, 27);
     height: 400px;
     color: white;
     text-align: right;
+    
 
     transition: 1s ease;
   }
@@ -31,7 +33,7 @@
   background-color: rgb(24, 26, 27);
   color: white;
   padding: 100px 20vh;
-  
+  scroll-behavior: smooth;
 }
 .Home .overview .o_title{
   text-align: left;
@@ -110,6 +112,7 @@
 
 .vision{
   text-align: left;
+  padding: 20px 0;
 }
 .section{
     margin: 100px 20px;
@@ -182,17 +185,29 @@
 
 
 @media (max-width: 1024px) {
-  
+  .Home .title{
+    background-color: red;
+    height: 350px;
+  }
 }
 @media (max-width: 768px) {
+  .Home .title{
+    background-color: rgba(8, 128, 197, 0.397);
+    height: 350px;
+  }
   .Home .title:hover{
     transition: 1s ease;
-    transform: scale(1.05);   
+    transform: scale(1);   
   }
 }
 @media (max-width: 480px) {
+  .Home {}
+  .Home .title{
+    
+    height: 90px;
+  }
   .Home .title:hover{
     transition: 1s ease;
-    transform: scale(1.05);   
+    transform: scale(1);  
   }
 }

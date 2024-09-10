@@ -52,7 +52,7 @@ function Recruit(){
                     <h3>"초보부터 전문가까지, 모두가 함께 배우고 <br/>도전하는 공간에서 당신의 개발 역량을 키워보세요."</h3>
                 </div>
             </div>
-            
+            <div><center><a href="/Recruit_form"><button class="btn-hover color-8">지원하기</button></a></center></div>
         </div>
     )
 }

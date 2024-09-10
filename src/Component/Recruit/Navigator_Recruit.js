@@ -7,7 +7,7 @@ function Navigator_Recruit(){
         <div className='NavR'>
             <div className='list'>
                 <li className='logo_CAN'><a href='/'>CAN</a></li>
-                <p>Recruit</p>
+                <li><a href='/Recruit'>Recruit</a></li>
             </div>
 
         </div>

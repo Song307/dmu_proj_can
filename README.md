@@ -14,7 +14,7 @@
     ㄴRecruit 기간이 아닙니다.
     ㄴRecruit form
         ㄴSubmit
-ㄴlogin (구글 로그인 api & 인증키 발급 api )
+ㄴlogin ( 구글 로그인 api & 인증키 발급 api )
     ㄴRegistration page ( 회원가입 폼 & 인증키 )
 ㄴAdministrators page
     ㄴmember 관리자 페이지(멤버 정보 및 권한 조회 & 관리)
@@ -26,4 +26,7 @@
     ㄴID/PW 변경
 ㄴFAQ
 
+
+rgb(24, 26, 27);
+rgb(42, 45, 47);
 
