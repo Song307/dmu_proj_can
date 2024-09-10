@@ -34,7 +34,7 @@ function Navigator_home(){
                 <li className='li'>About</li>
                 <li className='li'>Project</li>
                 <li className='li'>Study</li>
-                <li className='li'><a href='/Recruit_form'>Recruit</a></li>
+                <li className='li'><a href='/Recruit'>Recruit</a></li>
                 <div className='icon'>
                     <li className='icon_user'><a href='/login'>{SvgConnecter('user')}</a></li>
                     <li className='icon_user'>{SvgConnecter('discord')}</li>

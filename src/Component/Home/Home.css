@@ -30,8 +30,53 @@
 .Home .overview{
   background-color: rgb(24, 26, 27);
   color: white;
-  padding: 50px 20vh;
+  padding: 100px 20vh;
+  
 }
+.Home .overview .o_title{
+  text-align: left;
+  font-size: 120px;
+  line-height: 0.5;
+  padding: 30px 0;
+  margin: -0px 0;
+
+}
+.o_title_color {
+  background: linear-gradient(90deg, #887979, #feb47b); /* 그라데이션 색상 */
+  -webkit-background-clip: text; /* 배경을 텍스트 부분에만 적용 */
+  -webkit-text-fill-color: transparent; /* 텍스트 색을 투명하게 만들어 배경이 보이게 함 */
+}
+.o_title_p {
+  text-align: left;
+}
+
+
+
+
+.overview .header{
+  color :white;
+  background-color: rgb(24, 26, 27);
+  padding: 0 0;
+}
+.overview .header h1{
+  margin: 0px 0px;
+}
+.overview .header_block_left{
+  text-align: left;
+  padding: 50px 0;
+  margin: 0 10vw;
+}
+
+.overview .header_block_right{
+  text-align: right;
+  padding: 50px 0vw;
+  margin: 0 10vw;
+}
+
+
+
+
+
 
 
 .scroll-arrow {
@@ -78,6 +123,7 @@
   margin: 100px 0;
 }
 .section .blocks_left{
+  
   display: flex;
 }
 

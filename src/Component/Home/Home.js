@@ -56,21 +56,27 @@ function Home(){
              </div>
 
              <div className='overview'>
+              <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>C</span>REATIVE  </h1>
+              <h1 className='o_title' data-aos="fade-right" data-aos-once='false'><span className='o_title_color'>A</span>PPLICATION </h1>
+              <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>N</span>ETWORK</h1>
+              <h2 className='o_title_p' data-aos="fade-up" data-aos-once='false'>CAN은 개발을 통해 협력과 성장을 추구하는 커뮤니티입니다.</h2>
+                
+                
                 <div className='res1'><img src={resImage}/></div>
-                  <div className='overview_list' data-aos="fade-up" data-aos-once='false'>
-                    <h1 className='sub_title_h1'>STUDY</h1>
-                    <div className='overview_list' data-aos="fade-up" data-aos-once='false'>
-                     <p>
-                        <br/>오랜시간 이어져 온 만큼, 다양한 프로젝트 경험 및 수상경력이 있으며 이러한 노하우를 바탕으로 하여 웹과 게임 소프트웨어 개발을 주요 분야로 활동하고 있습니다.
+                <div className='header'>
+                <h1 className='' data-aos="fade-left" data-aos-once='false'>STUDY</h1>
+                     <h3>
+                        오랜시간 이어져 온 만큼, 다양한 프로젝트 경험 및 수상경력이 있으며
+                        <br/>이러한 노하우를 바탕으로 하여 웹과 게임 소프트웨어 개발을 주요 분야로 활동하고 있습니다.
                         <br/>하고 싶은 활동이 있다면 가리지 않고 무엇이든지 할 수 있도록 최대한 돕고 함께하고 있으며,
                         <br/>동아리 활동인 만큼 다른 것보다 부원들이 서로에 대해 존중하며 활동하는 것을 중요하게 생각하고 있습니다.
                         <br/>
-                     </p>
-                    </div>
-                    
+                     </h3>
+                </div>
 
 
 
+                  <div>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                     <div className='vision'> 
                       <h1 className='sub_title_h1' data-aos="fade-left" data-aos-once='false' >우리 동아리의 핵심은?</h1>
