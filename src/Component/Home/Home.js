@@ -9,7 +9,7 @@ import resImage from './resource1.PNG';
 
 
 function Home(){
-  // 컴포넌트가 마운트될 때 AOS 초기화
+
   useEffect(() => {
     AOS.init({                              // AOS 초기화
       duration: 1000,                       // 애니메이션 지속 시간 설정 (1000ms = 1초)
@@ -25,41 +25,34 @@ const scrollToOverview = () => {
       behavior: 'smooth' // 부드러운 스크롤
     });
   }
-};///////////////////함수로 만들 것
+};
 
 const MarqueeText = () => {
   const pTag1 = useRef(null);
   const pTag2 = useRef(null);
-  const pTag3 = useRef(null);
-  const pTag4 = useRef(null);
 
-  const textArr1 = 'Javascript HTML CSS Typescript Database Linux'.split(' ');
-  const textArr2 = 'Chicken Hamburger Pizza Salad Sushi Bibimbab Gimbab JJajangmyeon'.split(' ');
-  const textArr3 = "Let's Dive Into This Tutorial Take It Easy! Don't Worry".split(' ');
-  const textArr4 = 'Pure Moral Conscientious Meritorious Worthy Exemplary Upright '.split(' ');
+  const textArr1 = 'Javascript HTML CSS Typescript Database Linux Javascript HTML CSS Typescript Database Linux'.split(' ');
+  const textArr2 = 'Unity Game Figma Github C Python MySQL JAVA Unity Game Figma Github C Python MySQL JAVA '.split(' ');
 
   let count1 = 0;
   let count2 = 0;
-  let count3 = 0;
-  let count4 = 0;
 
   useEffect(() => {
-    // DOM 요소가 존재하는지 확인
-    if (pTag1.current && pTag2.current && pTag3.current && pTag4.current) {
+    // DOM 요소가 렌더링됐는지 확인 후 실행
+    if (pTag1.current && pTag2.current) {
       initTexts(pTag1.current, textArr1);
       initTexts(pTag2.current, textArr2);
-      initTexts(pTag3.current, textArr3);
-      initTexts(pTag4.current, textArr4);
 
       function initTexts(element, textArray) {
-        textArray.push(...textArray);
+        textArray.push(...textArray); // 텍스트 배열을 두 배로 늘림
         element.innerText = ''; // 이전 텍스트 제거
         for (let i = 0; i < textArray.length; i++) {
-          element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
+          element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`; // 텍스트 추가
         }
       }
 
       function marqueeText(count, element, direction) {
+        if (!element) return count; // element가 null인 경우 처리
         if (count > element.scrollWidth / 2) {
           element.style.transform = `translate3d(0, 0, 0)`;
           count = 0;
@@ -71,13 +64,9 @@ const MarqueeText = () => {
       function animate() {
         count1++;
         count2++;
-        count3++;
-        count4++;
 
         count1 = marqueeText(count1, pTag1.current, -1);
         count2 = marqueeText(count2, pTag2.current, 1);
-        count3 = marqueeText(count3, pTag3.current, -1);
-        count4 = marqueeText(count4, pTag4.current, 1);
 
         window.requestAnimationFrame(animate);
       }
@@ -85,15 +74,14 @@ const MarqueeText = () => {
       function scrollHandler() {
         count1 += 15;
         count2 += 15;
-        count3 += 15;
-        count4 += 15;
       }
 
       window.addEventListener('scroll', scrollHandler);
       animate();
 
+      // Cleanup function to remove event listener when component is unmounted
       return () => {
-        window.removeEventListener('scroll', scrollHandler); // Cleanup
+        window.removeEventListener('scroll', scrollHandler);
       };
     }
   }, []); // 빈 배열을 넣어 컴포넌트가 마운트될 때만 실행
@@ -105,12 +93,6 @@ const MarqueeText = () => {
       </div>
       <div className="cover">
         <p className="second-parallel" ref={pTag2}></p>
-      </div>
-      <div className="cover">
-        <p className="third-parallel" ref={pTag3}></p>
-      </div>
-      <div className="cover">
-        <p className="forth-parallel" ref={pTag4}></p>
       </div>
     </div>
   );
@@ -172,9 +154,18 @@ const MarqueeText = () => {
                 </div>
             </div>
 
-            <div className='study' id='study'><h1>STUDY</h1></div>
-            <MarqueeText />
-
+            <div className='study' id='study'><h1>STUDY</h1>
+              <div className='block'>
+                <div className='box'>
+                  <h2>WEB</h2>
+                </div>
+                <div className='box'>
+                  <h2>GAME</h2>
+                </div>
+              </div>
+              
+              <MarqueeText />
+            </div>
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
              

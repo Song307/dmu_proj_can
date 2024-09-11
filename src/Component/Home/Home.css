@@ -198,6 +198,25 @@
   color: white;
   font-size: 50px;
 }
+.Home .study .block {
+  color: white;
+  background-color: yellow;
+  margin: 0 10vw;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* 각 박스 사이에 간격을 맞추기 위해 사용 */
+}
+
+.Home .study .block .box {
+  padding: 10px;
+  background-color: #5800ff;
+  text-align: left;
+  margin: 10px;
+  flex: 1; /* 박스들이 동일한 너비로 나뉘도록 설정 */
+  max-width: calc(50% - 20px); /* 두 개의 박스가 2칸에 맞춰지도록 설정 */
+  box-sizing: border-box; /* padding과 margin을 포함한 너비 계산 */
+}
+
 
 
 @media (max-width: 1024px) {
@@ -240,7 +259,7 @@
 
 
 
-
+  
 
 
 
@@ -269,13 +288,13 @@ body {
 
 .cover {
   width: 100vw;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   display: flex;
 }
 
 .cover:nth-child(1) {
   margin-top: 10vh;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
   background-color: #ff3796;
 }
 
@@ -285,18 +304,9 @@ body {
   justify-content: flex-end;
 }
 
-.cover:nth-child(3) {
-  transform: rotate(-2deg);
-  background-color: #ecfe04;
-}
 
-.cover:nth-child(4) {
-  transform: rotate(2deg);
-  background-color: #00faac;
-  justify-content: flex-end;
-  margin-bottom: 50vh;
-}
 
 .cover p {
-
+  color: white;
+  font-weight: 600;
 }
