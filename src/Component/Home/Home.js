@@ -109,6 +109,8 @@ const MarqueeText = () => {
         <div className='Home'>
           
           <Navigator_home/>
+
+          
             <div className='title'>
             <AnimatedText text="CAN" />
             

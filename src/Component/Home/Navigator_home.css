@@ -35,6 +35,11 @@
     color: darkslategrey;
     transform: scale(1.1);
 }
+.Nav .link{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
 
 
 
@@ -109,14 +114,13 @@
 /* 화면 너비가 768px 이하일 때 */
 @media (max-width: 768px) {
     .Nav {
-        flex-direction: column; /* 상단 바가 수직으로 쌓이도록 변경 */
+
         padding: 10px 3vh;
     }
     .Nav .list {
         flex-direction: column; /* 리스트 항목도 수직 정렬 */
         gap: 20px; /* 간격을 더 줄이기 */
         width: 100%; /* 리스트가 화면 가득 차도록 */
-        
     }
     .Nav .logo_CAN {
         margin-right: 0; /* 오른쪽 여백 제거 */
@@ -128,6 +132,9 @@
     }
     .Nav .icon_user {
         margin-left: 0; /* 오른쪽 끝에 위치시키기 */
+    }
+    .Nav .link{
+        gap: 30;
     }
 }
 
@@ -148,5 +155,8 @@
 
     .Nav .list .li {
         font-size: 12px; /* 리스트 항목 크기 줄이기 */
+    }
+    .Nav .link{
+        gap: 25px;
     }
 }
