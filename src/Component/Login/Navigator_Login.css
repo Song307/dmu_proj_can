@@ -1,0 +1,131 @@
+.NavR {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-color: rgb(24, 26, 27);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.NavR .list {
+    background-color: rgb(24, 26, 27);
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    transition: 0.1s;   
+    margin: 0;
+}
+
+.NavR p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+}
+
+
+.NavR .logo_CAN {
+    font-size: 40px;
+    border: 1px solid white;
+    padding: 0px 15px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    background-color: rgb(24, 26, 27);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.NavR .logo_CAN:hover {
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+.NavR .logo_CAN a {
+    color: white;
+    text-decoration: none;}
+.NavR .logo_CAN:hover a {
+    color: black;
+}
+.NavR li {
+    padding: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.NavR li:hover {
+    color: darkslategrey;
+    transform: scale(1.1);
+}
+.NavR a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 화면 너비가 1024px 이하일 때 */
+@media (max-width: 1024px) {
+    .NavR {
+        padding: 10px 4vh;
+    }
+
+
+
+    .NavR .logo_CAN {
+
+        font-size: 22px; /* 로고 크기 줄이기 */
+    }
+
+
+}
+
+/* 화면 너비가 768px 이하일 때 */
+@media (max-width: 768px) {
+    .NavR {
+        flex-direction: column; /* 상단 바가 수직으로 쌓이도록 변경 */
+        padding: 10px 3vh;
+    }
+
+    .NavR .list {
+        flex-direction: column; /* 리스트 항목도 수직 정렬 */
+        gap: 20px; /* 간격을 더 줄이기 */
+        width: 100%; /* 리스트가 화면 가득 차도록 */
+    }
+
+    .NavR .logo_CAN {
+        margin-right: 0; /* 오른쪽 여백 제거 */
+        font-size: 20px; /* 로고 크기 더 줄이기 */
+    }
+
+    .NavR .list .li {
+        font-size: 16px; /* 리스트 항목 크기 줄이기 */
+    }
+    .NavR .list .icon{
+        margin-left: 0; /* 오른쪽 끝에 위치시키기 */
+    }
+    .NavR .icon_user {
+        margin-left: 0; /* 오른쪽 끝에 위치시키기 */
+    }
+}
+
+/* 화면 너비가 480px 이하일 때 */
+@media (max-width: 480px) {
+    .NavR {
+        padding: 8px 2vh;
+    }
+
+    .NavR .list {
+        gap: 10px; /* 리스트 항목 간격 더 줄이기 */
+    }
+
+    .NavR .logo_CAN {
+        font-size: 18px; /* 로고 크기 더 작게 */
+        padding: 3px 10px; /* 패딩 크기 줄이기 */
+    }
+
+    .NavR .list .li {
+        display: none;
+    }
+}

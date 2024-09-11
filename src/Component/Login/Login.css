@@ -1,14 +1,125 @@
 .Login{
     background-color: rgb(24, 26, 27);
     color: white;
-    padding: 20px 0;
+    padding: 50px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .Login .box{
-    background-color: rgb(94, 96, 97);
-    margin: 0 40vw;
-    text-align: right;
+    background-color: rgb(53, 53, 53);
+    margin: 0 30vw;
+    padding: 60px 80px;
+    text-align: left;
+    transition: 1s;
+}
+.Login .box:hover{
+    transform: scale(1.05);
+}
 
+.Login .box h1{
+    margin: 0 0;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 0px 0 40px 0;
+}
+
+.Login .box h3{
+    margin: 0 0;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 1s;
 }
 
 
+.Login .box input{
+    background-color: rgb(53, 53, 53);
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    transition: 1s;
+}
+.Login .box input:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    border-bottom: 2px solid rgb(63, 94, 233);   
+}
+.Login .box input:focus {
+    transition: 1s;
+    transform: scale(1.05);
+    border-bottom: 2px solid rgb(63, 94, 233);   
+    outline: none;                        /* 기본 포커스 아웃라인 제거 */
+}
+
+
+
+.Login .box .option_box {
+    display: flex;
+    justify-content: space-between; /* 요소들을 양 끝에 배치 */
+    align-items: center; /* 세로 중앙 정렬 (옵션) */
+    width: 100%; /* 부모 컨테이너 너비를 100%로 설정 */
+    padding: 20px 0;
+}
+.Login .box .register{  }
+.Login .box .findPW{}
+.option_box a{ text-decoration: none; color: white; transition: 1s;}
+.option_box a:hover{ transform: scale(1.1);  transition: 1s;}
+
+
+.login_button {
+    width: 100%;
+    color: white;
+    
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+.btn-hover {
+
+    font-size: 16px; /* 폰트 크기 */
+    font-weight: 600; /* 폰트 굵기 */
+    color: #fff !important; /* 글꼴 색상 */
+    cursor: pointer;
+    margin: 0px;
+    height: 55px;
+    width: 100%;
+    border-radius: 0px;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    transform: scale(1.01);
+}
+.btn-hover:focus {
+    outline: none;
+}
+
+.dsa {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .Login .box{
+        margin: 0 10vw;
+        padding: 60px 80px;
+
+    }
+}
