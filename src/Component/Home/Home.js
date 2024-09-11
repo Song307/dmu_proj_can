@@ -1,6 +1,6 @@
 import './Home.css';
 import AnimatedText from './Animate';
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import Navigator_home from './Navigator_home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,6 +26,98 @@ const scrollToOverview = () => {
     });
   }
 };///////////////////함수로 만들 것
+
+const MarqueeText = () => {
+  const pTag1 = useRef(null);
+  const pTag2 = useRef(null);
+  const pTag3 = useRef(null);
+  const pTag4 = useRef(null);
+
+  const textArr1 = 'Javascript HTML CSS Typescript Database Linux'.split(' ');
+  const textArr2 = 'Chicken Hamburger Pizza Salad Sushi Bibimbab Gimbab JJajangmyeon'.split(' ');
+  const textArr3 = "Let's Dive Into This Tutorial Take It Easy! Don't Worry".split(' ');
+  const textArr4 = 'Pure Moral Conscientious Meritorious Worthy Exemplary Upright '.split(' ');
+
+  let count1 = 0;
+  let count2 = 0;
+  let count3 = 0;
+  let count4 = 0;
+
+  useEffect(() => {
+    // DOM 요소가 존재하는지 확인
+    if (pTag1.current && pTag2.current && pTag3.current && pTag4.current) {
+      initTexts(pTag1.current, textArr1);
+      initTexts(pTag2.current, textArr2);
+      initTexts(pTag3.current, textArr3);
+      initTexts(pTag4.current, textArr4);
+
+      function initTexts(element, textArray) {
+        textArray.push(...textArray);
+        element.innerText = ''; // 이전 텍스트 제거
+        for (let i = 0; i < textArray.length; i++) {
+          element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
+        }
+      }
+
+      function marqueeText(count, element, direction) {
+        if (count > element.scrollWidth / 2) {
+          element.style.transform = `translate3d(0, 0, 0)`;
+          count = 0;
+        }
+        element.style.transform = `translate3d(${direction * count}px, 0, 0)`;
+        return count;
+      }
+
+      function animate() {
+        count1++;
+        count2++;
+        count3++;
+        count4++;
+
+        count1 = marqueeText(count1, pTag1.current, -1);
+        count2 = marqueeText(count2, pTag2.current, 1);
+        count3 = marqueeText(count3, pTag3.current, -1);
+        count4 = marqueeText(count4, pTag4.current, 1);
+
+        window.requestAnimationFrame(animate);
+      }
+
+      function scrollHandler() {
+        count1 += 15;
+        count2 += 15;
+        count3 += 15;
+        count4 += 15;
+      }
+
+      window.addEventListener('scroll', scrollHandler);
+      animate();
+
+      return () => {
+        window.removeEventListener('scroll', scrollHandler); // Cleanup
+      };
+    }
+  }, []); // 빈 배열을 넣어 컴포넌트가 마운트될 때만 실행
+
+  return (
+    <div>
+      <div className="cover">
+        <p className="first-parallel" ref={pTag1}></p>
+      </div>
+      <div className="cover">
+        <p className="second-parallel" ref={pTag2}></p>
+      </div>
+      <div className="cover">
+        <p className="third-parallel" ref={pTag3}></p>
+      </div>
+      <div className="cover">
+        <p className="forth-parallel" ref={pTag4}></p>
+      </div>
+    </div>
+  );
+};
+
+
+
 
 
     return(
@@ -60,16 +152,16 @@ const scrollToOverview = () => {
                     </div>
              </div>
 
-             <div className='overview' id='overview'>
+            <div className='overview' id='overview'>
               <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>C</span>REATIVE  </h1>
               <h1 className='o_title' data-aos="fade-right" data-aos-once='false'><span className='o_title_color'>A</span>PPLICATION </h1>
               <h1 className='o_title' data-aos="fade-left" data-aos-once='false'><span className='o_title_color'>N</span>ETWORK</h1>
               <h2 className='o_title_p' data-aos="fade-up" data-aos-once='false'>CAN은 개발을 통해 협력과 성장을 추구하는 커뮤니티입니다.</h2>
                 
-                
+                  
                 <div className='res1'><img src={resImage}/></div>
                 <div className='header'>
-                <h1 className='' data-aos="fade-left" data-aos-once='false'>STUDY</h1>
+                
                      <h3>
                         오랜시간 이어져 온 만큼, 다양한 프로젝트 경험 및 수상경력이 있으며
                         <br/>이러한 노하우를 바탕으로 하여 웹과 게임 소프트웨어 개발을 주요 분야로 활동하고 있습니다.
@@ -78,71 +170,10 @@ const scrollToOverview = () => {
                         <br/>
                      </h3>
                 </div>
+            </div>
 
-
-
-                  <div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    <div className='vision' id='vision'> 
-                      <h1 className='sub_title_h1' data-aos="fade-left" data-aos-once='false' >우리 동아리의 핵심은?</h1>
-                        <div className='section'>
-                          <div className='blocks' data-aos="fade-right" data-aos-once='false'>
-                            <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_01.png'/>
-                            <div>
-                              <h1 className='sub_title_h2'>협력을 통한 성장 </h1>
-                              <p>팀워크를 통해 서로의 아이디어와 기술을 결합하며, 더 나은 결과를 만들어갑니다. <br/>
-                                협력적인 환경에서 문제를 해결하고, 함께 프로젝트를 완성해 나갑니다.<br/>
-                                실제 개발 환경과 유사한 팀 프로젝트를 통해 실무 경험을 쌓고, 협업 능력을 키울 수 있습니다.
-                              </p>
-                            </div>
-                         </div>
-
-                         <div className='blocks_left' data-aos="fade-left" data-aos-once='false'>
-                            <div>
-                              <h1 className='sub_title_h2'>개발 커뮤니티 </h1>
-                              <p>우리 동아리는 단순한 기술 학습을 넘어,<br/>
-                                개발자들이 서로의 성장과 성공을 지원하는 따뜻한 커뮤니티입니다.<br/>
-                                같은 목표를 가진 사람들과 네트워킹하며, 서로의 성장을 응원하고 지원합니다.
-                                
-                              </p>
-                            </div>
-                            <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_03.png'/>
-                         </div>
-                         <div className='blocks' data-aos="fade-right" data-aos-once='false'>
-                         <img src='https://www.dongyang.ac.kr/sites/dmu_23222/images/dmu_23222_comm_04.png'/>
-                            <div>
-                              <h1 className='sub_title_h2'>튜터링을 통한 성장 가이드 제공</h1>
-                              <p>동아리 내에서는 경험이 풍부한 회원들이 직접 후배나 동료들에게 기술적인 도움을 주는 튜터링 활동을 진행합니다. <br/>
-                                튜터링은 개인의 기술적인 문제를 해결하거나 프로젝트를 진행하는 데 필요한 가이드를 제공하는 중요한 과정으로,<br/>
-                                서로의 지식을 나누고 실력을 향상시킬 수 있는 기회를 제공합니다. <br/>
-                              </p>
-                            </div>
-                         </div>                         
-                    </div>
-
-                    
-
-
-
-
-
-
-
-
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    <h1>웹과 게임의 미래를 함께 디자인하다!</h1> <br/><br/>
-                    <div className='about_part' data-aos="fade-up" data-aos-once='false'>
-                     <div className='partbox'>
-
-                     </div>
-                    </div>
-
-
-
-                  </div>
-                </div>
-             </div>
-            
+            <div className='study' id='study'><h1>STUDY</h1></div>
+            <MarqueeText />
 
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

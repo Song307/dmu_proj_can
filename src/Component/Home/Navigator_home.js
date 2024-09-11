@@ -32,8 +32,8 @@ function Navigator_home(){
             <div className='list'>
                 <li className='logo_CAN'><a href='/'>CAN</a></li>
                 <li className='li'>About</li>
-                <li className='li'>Project</li>
                 <li className='li'>Study</li>
+                <li className='li'>Project</li>
                 <li className='li'><a href='/Recruit'>Recruit</a></li>
                 <div className='icon'>
                     <li className='icon_user'><a href='/login'>{SvgConnecter('user')}</a></li>
