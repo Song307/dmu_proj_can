@@ -5,6 +5,8 @@ import Navigator_home from './Navigator_home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import resImage from './resource1.PNG';
+import img1 from './img1.webp';
+import img2 from './img2.webp';
 
 
 
@@ -105,6 +107,7 @@ const MarqueeText = () => {
     return(
       
         <div className='Home'>
+          
           <Navigator_home/>
             <div className='title'>
             <AnimatedText text="CAN" />
@@ -154,21 +157,89 @@ const MarqueeText = () => {
                 </div>
             </div>
 
-            <div className='study' id='study'><h1>STUDY</h1>
-              <div className='block'>
-                <div className='box'>
-                  <h2>WEB</h2>
+
+            <div className='about'>
+              <h1>CAN 어떤 경험을 할 수 있을까요?</h1>
+              <div className='box_left' data-aos="fade-left" data-aos-once='false'>
+                <div className='img_sec'></div>
+                <div className='text_sec'>
+                  <h3>#협업  #프로젝트  #공모전</h3>
+                  <h2>협력을 통한 성장</h2>
+                  <p>팀워크를 통해 서로의 아이디어와 기술을 결합하며, 더 나은 결과를 만들어갑니다. <br/>
+                    협력적인 환경에서 문제를 해결하고, 함께 프로젝트를 완성해 나갑니다.<br/>
+                    실제 개발 환경과 유사한 팀 프로젝트를 통해 실무 경험을 쌓고, 협업 능력을 키울 수 있습니다.
+                  </p>
                 </div>
-                <div className='box'>
-                  <h2>GAME</h2>
+              </div>
+              <div className='box_right' data-aos="fade-right" data-aos-once='false'>
+                <div className='text_sec'>
+                <h3>#네트워크  #소통  #이벤트</h3>
+                  <h2>개발 커뮤니티</h2>
+                  <p>우리 동아리는 단순한 기술 학습을 넘어,<br/>
+                     개발자들이 서로의 성장과 성공을 지원하는 따뜻한 커뮤니티입니다.<br/>
+                     같은 목표를 가진 사람들과 네트워킹하며, 서로의 성장을 응원하고 지원합니다.
+                  </p>
+                </div>
+                <div className='img_sec_right'></div>
+              </div>
+              <div className='box_left' data-aos="fade-left" data-aos-once='false'>
+                <div className='img_sec'>d</div>
+                <div className='text_sec'>
+                <h3>#멘토링  #가이드 </h3>
+                  <h2>튜터링을 통한 성장 가이드 제공</h2>
+                  <p>동아리 내에서는 경험이 풍부한 회원들이 직접 후배나 동료들에게 기술적인 도움을 주는 튜터링 활동을 진행합니다. <br/>
+                     튜터링은 개인의 기술적인 문제를 해결하거나 프로젝트를 진행하는 데 필요한 가이드를 제공하는 중요한 과정으로,<br/>
+                     서로의 지식을 나누고 실력을 향상시킬 수 있는 기회를 제공합니다. <br/>
+                  </p>
                 </div>
               </div>
               
-              <MarqueeText />
+
             </div>
+
+
+
+
+
+
+
+
+
+            <div className='study' id='study' >
+              <h1 data-aos="fade-up" data-aos-once='false'>TEAM</h1>
+              <div className='block'>
+                <div className='box' data-aos="fade-left" data-aos-once='false'>
+                  <img src={img2}/> 
+                  <h2>WEB DEV TEAM</h2>
+                  <p>최신 웹 기술을 탐구하고, 실전 프로젝트를 통해 실력을 키워나가는 공간입니다. 협업을 통해 창의적인 웹 애플리케이션을 개발하며, 함께 성장하는 것을 목표로 합니다."</p>
+                </div>
+                <div className='box' data-aos="fade-left" data-aos-once='false'>
+                  <img src={img1}/> 
+                  <h2>GAME DEV TEAM</h2>
+                  <p>"창의적인 게임 아이디어를 실현하고, 게임 디자인과 프로그래밍을 함께 배우는 곳입니다. 팀워크를 통해 게임을 기획하고 제작하며, 재미있고 도전적인 프로젝트에 도전합니다."</p>
+                </div>
+              </div>
+              <h1>project</h1>
+              
+            </div>
+            <div className='study'>
+              <h1>DEVELOPMENT STACKS</h1>
+
+            </div>
+
+
+
+
+
+
+
+            <MarqueeText />
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
              
+
+
+
         </div>
     )
     

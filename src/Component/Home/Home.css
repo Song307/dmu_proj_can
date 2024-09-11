@@ -163,34 +163,54 @@
 }
 
 
-.about_part{
-  display: inline-flex;
-  gap: 100px;
-  color: white;
-  text-align: center;
-  
+.about{color: white;
+
+  margin: 0 10vw;
 }
-.about_part .partbox{
-  width: 50%;
-  
-  height: 350px;
-  transition: 1s ease;
+.about h3{
+  font-size: 15px;
+  margin: 0;
 }
-.about_part .partbox:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: 1s ease;
-  color: antiquewhite;
+.about .box_left{
+  background-color: #000000;
+  margin: 20px 100px;
+  height: 300px;
+  color: #ffffff;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  border-radius: 500px;
+}
+.about .box_right{
+  background-color: #000000;
+  margin: 20px 100px;
+  padding: 0 0 0 100px;
+  height: 300px;
+  text-align: right;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  border-radius: 500px;
+}
+.about  .img_sec{
+  background-color: #ffffff;
+  width: 40%;
+  height: 100%;
+}
+.about  .img_sec_right{
+  background-color: #ffffff;
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
 }
 
-.Home .overview .o_title{
-  text-align: left;
-  font-size: 120px;
-  line-height: 0.5;
-  padding: 30px 0;
-  margin: -0px 0;
-
+.about .text_sec{
+  text-align:  left;
+  padding: 20px;
 }
+
+
+
 .Home .study{
   padding: 300px 0;
 }
@@ -200,22 +220,80 @@
 }
 .Home .study .block {
   color: white;
-  background-color: yellow;
+
   margin: 0 10vw;
   padding: 10px;
   display: flex;
   justify-content: space-between; /* 각 박스 사이에 간격을 맞추기 위해 사용 */
 }
-
 .Home .study .block .box {
-  padding: 10px;
-  background-color: #5800ff;
+  padding: 50px;
+
   text-align: left;
   margin: 10px;
   flex: 1; /* 박스들이 동일한 너비로 나뉘도록 설정 */
   max-width: calc(50% - 20px); /* 두 개의 박스가 2칸에 맞춰지도록 설정 */
   box-sizing: border-box; /* padding과 margin을 포함한 너비 계산 */
 }
+
+.Home .study .block .box img{
+  width: 100%;
+
+  transition: .3s ease-in-out;
+}
+.Home .study .block .box img:hover{
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -45,6 +45,7 @@ function Recruit_form(){
                     <input type="text" placeholder="지원동기" className='form_text'/>
                 </div>
                 <div className='form_list'> 관심분야 <br/>
+                <p>* ex) 게임, 웹 </p>
                     <input type="text" placeholder="관심분야" className='form_text'/>
                 </div>
                 <div className='form_list'> 본인이 했던 프로젝트, 공부한 내용이 있다면 깃허브링크를 첨부해주세요. 없다면 비워두셔도 좋습니다. <br/>
