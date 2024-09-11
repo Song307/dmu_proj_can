@@ -173,7 +173,7 @@
 }
 .about .box_left{
   background-color: #000000;
-  margin: 20px 100px;
+  margin: 20px 100px 20px 0;
   height: 300px;
   color: #ffffff;
   display: flex; 
@@ -183,7 +183,7 @@
 }
 .about .box_right{
   background-color: #000000;
-  margin: 20px 100px;
+  margin: 20px 0px 20px 100px;
   padding: 0 0 0 100px;
   height: 300px;
   text-align: right;
@@ -194,12 +194,12 @@
 }
 .about  .img_sec{
   background-color: #ffffff;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 .about  .img_sec_right{
   background-color: #ffffff;
-  width: 40%;
+  width: 30%;
   height: 100%;
   margin-left: auto;
 }
