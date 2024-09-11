@@ -7,10 +7,10 @@
 
 .Login .box{
     background-color: rgb(53, 53, 53);
-    margin: 0 30vw;
+    margin: 50px 30vw 100px 30vw;
     padding: 60px 80px;
     text-align: left;
-    transition: 1s;
+
 }
 .Login .box:hover{
     transform: scale(1.05);
@@ -115,11 +115,50 @@
 
 
 
+@media (max-width: 1200px) {
+    .Login .box{
+        margin: 0 20vw 10vw 20vw;
+        padding: 60px 40px;
 
-@media (max-width: 500px) {
+    }
+    .Login .box h1{
+        font-size: 40px;
+    }
+    .Login .box h3{
+        font-size: 15px;
+    }
+    .Login .box input{
+        font-size:10px;
+        padding: 5px;
+    }
+    .Login .box .option_box {
+        font-size:  10px;
+    }
+}
+
+@media (max-width: 800px) {
     .Login .box{
         margin: 0 10vw;
-        padding: 60px 80px;
+        padding: 60px 30px;
 
+    }
+}
+
+
+@media (max-width: 200px) {
+
+    .Login .box h1{
+        font-size: 20px;
+        padding:  0;
+    }
+    .Login .box h3{
+        font-size: 10px;
+        padding:  0;
+    }
+    .Login .box input{
+        font-size:10px;
+    }
+    .Login .box .option_box {
+        font-size: 7px;
     }
 }

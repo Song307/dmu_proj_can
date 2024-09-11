@@ -33,7 +33,7 @@ function Login(){
 
                     <div className='option_box'>
                         <a href='#' className='register'>회원가입✔</a>
-                        <a href='#' className='findPW'>비밀번호 찾기✔</a>
+                        <a href='#' className='findPW'>ID/PW 찾기✔</a>
                     </div>
                     
                     
