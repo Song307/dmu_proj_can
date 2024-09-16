@@ -9,7 +9,15 @@
     color: rgb(156, 156, 156);
 }
 .Footer h3 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #cccccc;
+}
+
+@media (max-width : 500px){
+    .Footer h3 {
+        font-size: 12px;
+        font-weight: 600;
+        color: #cccccc;
+    }
+    
 }
