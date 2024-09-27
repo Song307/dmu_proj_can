@@ -5,8 +5,39 @@
 }
 
 .ViewResume .Resume_block{
-    background-color: white;
+    background-color: rgb(59, 59, 59);
     padding: 20px;
     border: 1px solid black;
-    margin: 10px;
+    margin: 10px 300px;
+
+}
+
+.ViewResume .ResumeList_section {
+    display: flex;
+    flex-direction: row; /* Arranges objects in a row */
+    flex-wrap: wrap; /* Allows the objects to wrap to the next line if they exceed the container width */
+    justify-content: flex-start; /* Aligns the objects starting from the left */
+    margin-bottom: 20px;
+    
+    width: 600px; /* Limits the width of the section */
+}
+
+
+.ViewResume .User_block {
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: grid;           /* Use grid for vertical layout */
+    justify-items: center;   /* Horizontally center the content */
+    align-content: center;   /* Vertically center the content */
+    line-height: 1.2;        /* Adjust line spacing */
+    text-align: center;      /* Center the text */
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.ViewResume .User_block:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease;
 }
