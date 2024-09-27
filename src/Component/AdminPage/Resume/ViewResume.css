@@ -3,3 +3,10 @@
     color: white;
     padding: 20px;
 }
+
+.ViewResume .Resume_block{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
