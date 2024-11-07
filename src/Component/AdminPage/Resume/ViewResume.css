@@ -2,37 +2,55 @@
     background-color: black;
     color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10vw;
 }
 
 .ViewResume .Resume_block{
     background-color: rgb(59, 59, 59);
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     border: 1px solid black;
     margin: 10px 300px;
+    width: 800px;
+    text-align: left;
+}
+.Resume_block .resumeId{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
 
+.ViewResume .Resume_block .btnClose{
+    color: rgb(127, 125, 125);
+    cursor: pointer;
 }
 
 .ViewResume .ResumeList_section {
-    display: flex;
-    flex-direction: row; /* Arranges objects in a row */
-    flex-wrap: wrap; /* Allows the objects to wrap to the next line if they exceed the container width */
-    justify-content: flex-start; /* Aligns the objects starting from the left */
-    margin-bottom: 20px;
     
-    width: 600px; /* Limits the width of the section */
+}
+.ResumeUiList {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: flex-start;  
+    gap: 5px;
+    width: 700px;
 }
 
-
-.ViewResume .User_block {
+.ResumeUiList .User_block {
     border: 1px solid white;
     width: 100px;
     height: 100px;
     margin: 5px;
-    display: grid;           /* Use grid for vertical layout */
-    justify-items: center;   /* Horizontally center the content */
-    align-content: center;   /* Vertically center the content */
-    line-height: 1.2;        /* Adjust line spacing */
-    text-align: center;      /* Center the text */
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    line-height: 1.2;
+    text-align: center;
     transition: 0.2s ease;
     cursor: pointer;
 }
@@ -41,3 +59,63 @@
     color: black;
     transition: 0.2s ease;
 }
+
+
+
+.selectViewMethod{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selectViewMethod svg{
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+.return_list{
+    width: 800px;
+    background-color: rgb(59, 59, 59);
+    padding: 15px 20px;
+}
+.return_list .item{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    transition: 0.2s ease;
+}
+.return_list .title{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    transition: 0.2s ease;
+    font-weight: 1000;
+}
+
+
+.return_list .item:hover{
+    transform: scale(1.01);
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+.return_list .id{
+    padding: 0px 40px;
+}
+.return_list .name{
+    padding: 0px 40px;
+}
+.return_list .call{
+    padding: 0px 40px;
+}
+
+
+
+
