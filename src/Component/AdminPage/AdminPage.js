@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AdminPage.css";
 import ViewResume from "./Resume/ViewResume";
 import UserManage from "./UserManage/UserManage";
+import Navigator_Admin from "./Navigator_Admin";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -50,6 +51,7 @@ function AdminPage() {
 
     return (
         <div className="AdminPage" >
+            <Navigator_Admin/>
             <h1 data-aos="fade-in" data-aos-once='true'  data-aos-easing="ease-in-out">관리자 페이지</h1>
             {view === "menu" ? (
                 <SelectMenu onSelectViewResume={showViewResume} onSelectUserManage={showUserManage} />

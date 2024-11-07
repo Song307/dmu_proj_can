@@ -7,7 +7,7 @@ function Navigator_Admin(){
         <div className='NavR'>
             <div className='list'>
                 <li className='logo_CAN'><a href='/'>CAN</a></li>
-                <li><a href='/login'>Login</a></li>
+                <li><a href='/AdminPage'>AdminPage</a></li>
             </div>
 
         </div>

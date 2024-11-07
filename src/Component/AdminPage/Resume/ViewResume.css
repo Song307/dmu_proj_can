@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .ViewResume_block {
     background-color: black;
@@ -73,7 +74,7 @@
 
 
 .selectViewMethod{
-    margin: 20px 0px;
+    margin: 5px 0px;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -168,7 +169,9 @@
 .searchWrapper {
     text-align: right;
     margin-bottom: 10px;
-   
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
 .searchWrapper input {
@@ -179,4 +182,17 @@
     font-size: 14px;
     background-color: rgb(60, 60, 60);
     color: white;
+}
+.searchWrapper button {
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    transition: 0.2s ease-in;
+}
+.searchWrapper button:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+    font-weight: 1000;
 }

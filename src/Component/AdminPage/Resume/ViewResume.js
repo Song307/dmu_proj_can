@@ -15,8 +15,11 @@ function ViewResume() {
     const [viewMode, setViewMode] = useState("ui");
     const [currentPage, setCurrentPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState(""); // 검색어 상태
-    const [filteredResumes, setFilteredResumes] = useState([]); // 필터링된 이력서 상태
+    const [filteredResumes, setFilteredResumes] = useState([]);
     const itemsPerPage = 10;
+    const inputRef = useRef(null);
+    const selectedResumeRef = useRef(null); // 선택된 resume의 요소를 참조하기 위한 ref
+
 
     const resume = [
         { Rid: 101, name: '송하성', studentNumber: 20212127, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Web', github: '', call: '01012345678' },
@@ -33,8 +36,8 @@ function ViewResume() {
     ];
 
     useEffect(() => {
-        handleSearch(); // 검색어가 변경될 때마다 필터링
-    }, [searchQuery, currentPage]);
+        setFilteredResumes(resume); // 초기 filteredResumes를 전체 resume 목록으로 설정
+    }, []);
 
     const totalPages = Math.ceil(filteredResumes.length / itemsPerPage);
     const currentItems = filteredResumes.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -45,23 +48,40 @@ function ViewResume() {
         setCurrentPage(pageNumber);
     };
 
+    
     const handleSearch = () => {
-        setFilteredResumes(
-            resume.filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()))
-        );
-        setCurrentPage(1); // 검색 시 페이지 초기화
+        if (inputRef.current) {
+            const query = inputRef.current.value;
+            setSearchQuery(query);  
+
+            const filtered = resume.filter(item =>
+                item.name.toLowerCase().includes(query.toLowerCase())
+            );
+            setFilteredResumes(filtered);
+            setCurrentPage(1); // 검색 시 페이지를 첫 페이지로 초기화
+        }
+    };
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch(); // Enter 키를 누르면 검색
+        }
     };
 
+    
     function ResumeList_list() {
-        return (
+        return (    
             <div className='return_list'>
                 <div className='searchWrapper'>
                     <input
+                        ref={inputRef} // useRef로 input 참조
                         placeholder='이름으로 검색'
-                        value={searchQuery}
-                         // 입력 시 검색어 상태 업데이트
+                        onKeyDown={handleKeyDown}
                     />
-                    <button onClick={handleSearch} onChange={(e) => setSearchQuery(e.target.value)}>검색</button>
+                    <button onClick={handleSearch}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
                 </div>
                 <div className='title'>
                     <div className='id'>ID</div>
@@ -128,18 +148,18 @@ function ViewResume() {
                 <h1 className='h1'>지원서 조회</h1>
                 <div className='selectViewMethod'>
                     <section className='viewUiMode' onClick={() => setViewMode("ui")}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+                            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </section>
+                    <section className='viewListMode' onClick={() => setViewMode("list")}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                         </svg>
                     </section>
-                    <section className='viewListMode' onClick={() => setViewMode("list")}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                    </section>
                 </div>
 
-                {viewMode === "ui" ? <ResumeUiList /> : <ResumeList_list />}
+                {viewMode === "ui" ?  <ResumeList_list /> : <ResumeUiList />}
                 {selectedResumeData && viewDetail(selectedResumeData)}
             </div>
         </div>
