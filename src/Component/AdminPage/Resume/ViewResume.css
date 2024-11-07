@@ -1,17 +1,30 @@
 .ViewResume{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ViewResume_block {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10vw;
+    width: 1000px;
+}
+
+.h1{
+    text-align: left;
+    width: 100%;
+    padding: 0 30px;
 }
 
 .ViewResume .Resume_block{
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(19, 19, 19);
     padding: 20px 20px 20px 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(60, 60, 60);
     margin: 10px 300px;
     width: 800px;
     text-align: left;
@@ -30,9 +43,6 @@
     cursor: pointer;
 }
 
-.ViewResume .ResumeList_section {
-    
-}
 .ResumeUiList {
     display: flex;
     flex-wrap: wrap;  
@@ -63,27 +73,33 @@
 
 
 .selectViewMethod{
-    margin-top: 20px;
+    margin: 20px 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
 }
 
 
 .selectViewMethod svg{
     cursor: pointer;
 }
+.selectViewMethod svg:hover{
+    color: rgb(174, 97, 246);
+    transform: scale(1.20);
+    transition: 0.2s ease;
+    
+}
 
-/* ///////////////////////////////////////////////////////////////////////// */
 .return_list{
     width: 800px;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(41, 41, 41);
     padding: 15px 20px;
 }
 .return_list .item{
     display: flex;
     justify-content: flex-start;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(19, 19, 19);
     padding: 10px;
     border-bottom: 1px solid rgb(29, 29, 29);
     transition: 0.2s ease;
@@ -96,6 +112,15 @@
     border-bottom: 1px solid rgb(29, 29, 29);
     transition: 0.2s ease;
     font-weight: 1000;
+}
+.return_list .title .id{
+    padding: 0px 45px;
+}
+.return_list .title .name{
+    padding: 0px 40px;
+}
+.return_list .title .call{
+    padding: 0px 70px;
 }
 
 
@@ -117,5 +142,41 @@
 }
 
 
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.return_list .btn_page {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+    border: none;
+    
+}
+
+.return_list .btn_page:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
 
 
+
+.searchWrapper {
+    text-align: right;
+    margin-bottom: 10px;
+   
+}
+
+.searchWrapper input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
