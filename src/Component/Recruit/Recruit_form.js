@@ -51,6 +51,9 @@ function Recruit_form(){
                 <div className='form_list'> 본인이 했던 프로젝트, 공부한 내용이 있다면 깃허브링크를 첨부해주세요. 없다면 비워두셔도 좋습니다. <br/>
                     <input type="text" placeholder="git.hub" className='form_text'/>
                 </div>
+                <div className='form_list'> 전화번호
+                    <input type="text" className='form_text' placeholder="-없이 입력해주세요."/>
+                </div>
                 
                 <div className='Submit'>
                     <button className='Submit_buton'>제출하기</button>
