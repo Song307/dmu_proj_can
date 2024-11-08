@@ -24,9 +24,9 @@ function ViewResume() {
     const resume = [
         { Rid: 101, name: '송하성', studentNumber: 20212127, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Web', github: '', call: '01012345678' },
         { Rid: 102, name: '김주형', studentNumber: 20212127, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Web', github: '', call: '01012345678' },
-        { Rid: 103, name: '이수민', studentNumber: 20212128, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'App', github: '', call: '01022334455' },
-        { Rid: 104, name: '박철민', studentNumber: 20212129, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Game', github: '', call: '01033445566' },
-        { Rid: 105, name: '정다연', studentNumber: 20212130, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'AI', github: '', call: '01044556677' },
+        { Rid: 103, name: '김찬영', studentNumber: 20212128, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'App', github: '', call: '01022334455' },
+        { Rid: 104, name: '최민서', studentNumber: 20212129, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Game', github: '', call: '01033445566' },
+        { Rid: 105, name: '송신화', studentNumber: 20212130, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'AI', github: '', call: '01044556677' },
         { Rid: 106, name: '최진우', studentNumber: 20212131, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Web', github: '', call: '01055667788' },
         { Rid: 107, name: '홍승연', studentNumber: 20212132, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Data Science', github: '', call: '01066778899' },
         { Rid: 108, name: '김미소', studentNumber: 20212133, grade: 2, class: 'YD', reason: '동아리 활동 희망', interest: 'Design', github: '', call: '01077889900' },

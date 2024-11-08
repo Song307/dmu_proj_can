@@ -129,3 +129,10 @@
         display: none;
     }
 }
+
+.NavR .icon_admin {
+    cursor: pointer;
+}
+.NavR .icon_admin:hover{
+    color: darkslategrey;
+}
